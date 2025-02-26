@@ -18,11 +18,7 @@ const Nav = () => {
           {/* A hamburger menu for small screens */}
           <div className="dropdown">
             {/* The little menu button that appears on mobile */}
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               {/* The three-line menu icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +35,7 @@ const Nav = () => {
                 />
               </svg>
             </div>
-            
+
             {/* Dropdown menu for mobile users */}
             <ul
               tabIndex={0}
@@ -54,7 +50,7 @@ const Nav = () => {
                   Home
                 </Link>
               </li>
-              
+
               {/* Services dropdown for mobile */}
               <details>
                 <summary className="text-[#1E1E1E] font-[600px] text-[20px]">
@@ -222,7 +218,7 @@ const Nav = () => {
           {/* Call-to-action button */}
           <Link
             href={"/"}
-            className="btn bg-gradient-to-b from-[#DD1234] to-[#B30F2A] lg:w-[168px] md:w-[168px] w-[100px] border-none rounded-[100px] shadow-custom-2 text-[20px] text-[#FFFFFF] font-[600]"
+            className="btn bg-gradient-to-b from-[#DD1234] to-[#B30F2A] lg:w-[168px] md:w-[168px] w-[100px] border-none rounded-[100px] shadow-custom-2 text-[20px] text-[#FFFFFF] font-[600] hover:scale-105 duration-200 hover:opacity-80 hover:text-[#FFFFFF]"
           >
             Button
           </Link>

@@ -43,31 +43,31 @@ const Footer = () => {
           {/* Links to different pages */}
           <Link
             href=""
-            className="link link-hover font-[400] text-[16px] lg:text-[20px] text-[#1E1E1E]"
+            className="link link-hover font-[400] text-[16px] lg:text-[20px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             Home
           </Link>
           <Link
             href=""
-            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             Services
           </Link>
           <Link
             href=""
-            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             About
           </Link>
           <Link
             href=""
-            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             Contact
           </Link>
           <Link
-            href=""
-            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            href="/getquote"
+            className="link link-hover font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             Get A Quote
           </Link>
@@ -79,14 +79,14 @@ const Footer = () => {
             Contact Us
           </h6>
           {/* Address */}
-          <address className="link link-hover  flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]">
+          <address className="link link-hover  flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200">
             <IoLocationOutline className="text-[#CB1130] w-[20px] h-[20px]" />
             Accra, Ghana
           </address>
           {/* Phone number */}
           <Link
             href="tel:233 24 000 0000"
-            className="link link-hover flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            className="link link-hover flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             <IoCallOutline className="text-[#CB1130] w-[20px] h-[20px]" />
             233 24 000 0000
@@ -94,7 +94,7 @@ const Footer = () => {
           {/* Email */}
           <Link
             href="mailto:info@tarmove.com"
-            className="link link-hover flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E]"
+            className="link link-hover flex flex-row items-center gap-2 font-[400] lg:text-[20px] text-[16px] text-[#1E1E1E] hover:text-[#CB1130] hover:no-underline duration-200"
           >
             <IoMailOutline className="text-[#CB1130] w-[20px] h-[20px]" />
             info@tarmove.com

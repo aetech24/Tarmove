@@ -6,7 +6,7 @@ import Image from "next/image";
 const GetQuote = () => {
   return (
     // Full-screen container that centers everything nicely
-    <div className="hero bg-inherit min-h-screen flex justify-center items-center">
+    <div className="hero bg-inherit min-h-screen flex justify-center items-center flex-col">
       {/* Splits the page into image and text sections */}
       <div className="hero-content flex flex-col lg:flex-row-reverse text-center lg:text-left">
         {/* Where our shipping image lives */}
@@ -20,19 +20,19 @@ const GetQuote = () => {
             sizes="(max-width: 768px) 300px, 570px"
           />
         </div>
-        
+
         {/* The words that explain our awesome shipping service */}
         <div className="lg:w-[530px] md:w-[530px] w-[330px] p-2 gap-[24px] flex flex-col items-center lg:items-start">
           {/* A little tag to catch your eye */}
           <p className="text-[18px] text-[#CB1130] font-[400] bg-[#FFF5F7E5] w-[200px] p-2 text-center lg:text-left">
             Shipping Made Simple
           </p>
-          
+
           {/* Big, bold headline to get you excited */}
           <h1 className="text-5xl font-bold text-center lg:text-left">
             Get a Quote in <span className="text-[#CB1130]">Minutes</span>
           </h1>
-          
+
           {/* A friendly description of what we do */}
           <p className="py-6 text-center lg:text-left ">
             Tell us about your shipment, and we&apos;ll handle the rest. Fast,
@@ -40,11 +40,11 @@ const GetQuote = () => {
           </p>
         </div>
       </div>
-      
+
       {/* A spot for cargo details (we'll add this later) */}
       <div>
         <form action="" method="post" className="">
-          <h1>Cargo Details</h1>
+          {/* <h1>Cargo Details</h1> */}
           {/* We'll add a dropdown for cargo types soon! */}
         </form>
       </div>
