@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fdfdfd;
+  --text: #1E1E1E;
+  --primary: #CB1130;
+  --secondary: #FFCBD4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: gradient(linear, 0% 0%, 0% 100%, from(#fdfdfd), to(#FFF4F6));
+    --text: #1E1E1E;
+    --primary: #CB1130;
+    --secondary: #FFCBD4;
+  }
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
