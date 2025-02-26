@@ -1,25 +1,39 @@
+/* Bringing in Tailwind's styling superpowers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Our color palette - makes sure everything looks consistent */
 :root {
+  /* Background color that's easy on the eyes */
   --background: #fdfdfd;
+
+  /* Text color that's clear and readable */
   --text: #1E1E1E;
+
+  /* Our brand's bold red color */
   --primary: #CB1130;
+
+  /* A soft pink that complements our main color */
   --secondary: #FFCBD4;
 }
 
+/* Same colors for dark mode (we'll make this smarter later) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: gradient(linear, 0% 0%, 0% 100%, from(#fdfdfd), to(#FFF4F6));
+    --background: #fdfdfd;
     --text: #1E1E1E;
     --primary: #CB1130;
     --secondary: #FFCBD4;
   }
 }
 
+/* How our whole website looks */
 body {
+  /* Using our chosen text and background colors */
   color: var(--text);
   background: var(--background);
+
+  /* A classic, readable font for everyone */
   font-family: Arial, Helvetica, sans-serif;
 }
