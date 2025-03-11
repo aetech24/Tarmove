@@ -8,9 +8,9 @@ const GetQuote = () => {
     // Full-screen container that centers everything nicely
     <div className="hero bg-inherit min-h-screen flex justify-center items-center flex-col">
       {/* Splits the page into image and text sections */}
-      <div className="hero-content flex flex-col lg:flex-row-reverse text-center lg:text-left">
+      <div className="grid grid-cols-1 lg:grid-cols-2 ">
         {/* Where our shipping image lives */}
-        <div className="flex justify-center lg:justify-end w-full">
+        <div className="flex justify-center lg:justify-end w-full lg:order-2">
           <Image
             src="/assets/GetQuoteHero.png"
             className="lg:w-[570px] lg:h-[520px] md:w-[570px] md:h-[520px] w-[300px] h-[300px]"
@@ -29,12 +29,12 @@ const GetQuote = () => {
           </p>
 
           {/* Big, bold headline to get you excited */}
-          <h1 className="text-5xl font-bold text-center lg:text-left">
-            Get a Quote in <span className="text-[#CB1130]">Minutes</span>
+          <h1 className="text-5xl font-bold text-center lg:text-left text-black">
+            Get a <span className="text-[#CB1130]">Quote</span> in Minutes
           </h1>
 
           {/* A friendly description of what we do */}
-          <p className="py-6 text-center lg:text-left ">
+          <p className="py-6 text-center lg:text-left text-black">
             Tell us about your shipment, and we&apos;ll handle the rest. Fast,
             reliable, and hassle-free shipping solutions for your business.
           </p>
