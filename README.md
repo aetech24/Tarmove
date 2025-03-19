@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
@@ -101,3 +102,7 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 # tramove-project-server
 The official repository of the tramove server
 >>>>>>> c2e1fd3121e0b11f02eb55229c90e300a40d89a6
+=======
+# project-init-structure
+A repository for a nest js project structure which will be forked for all processes that run across backend development.
+>>>>>>> b972d7c4272085e23ff1472facd1ef27e6f28cf9
