@@ -1,0 +1,16 @@
+/* Bringing in Tailwind's styling superpowers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html, body {
+  @apply bg-background
+}
+
+/* How our whole website looks */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
