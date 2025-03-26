@@ -47,25 +47,25 @@ const Footer = () => {
           
           {/* Links to different pages */}
           <Link
-            href=""
+            href="/"
             className="link link-hover font-[400] lg:text-[20px] text-[16px] text-black hover:text-redText hover:no-underline duration-200"
           >
             Home
           </Link>
           <Link
-            href=""
+            href="/services"
             className="link link-hover font-[400] lg:text-[20px] text-[16px] text-black hover:text-redText hover:no-underline duration-200"
           >
             Services
           </Link>
           <Link
-            href=""
+            href="/about"
             className="link link-hover font-[400] lg:text-[20px] text-[16px] text-black hover:text-redText hover:no-underline duration-200"
           >
             About
           </Link>
           <Link
-            href=""
+            href="/contact"
             className="link link-hover font-[400] lg:text-[20px] text-[16px] text-black hover:text-redText hover:no-underline duration-200"
           >
             Contact

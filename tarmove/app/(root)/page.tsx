@@ -1,13 +1,17 @@
-// We might need links later, so keeping this import ready
 // import Link from 'next/link'
-
-// Our homepage - the first thing people see when they visit
-// Right now it's empty, but we'll fill it with awesome content soon!
+import HomeHero from "../components/homeHero";
+import { HomeBanner1 } from "../components/homeBanners";
+import { HomeBanner2 } from "../components/homeBanners";
+import GoogleMap from "../components/GoogleMap";
 export default function Home() {
   return (
-    // A placeholder for our future homepage
     <div>
-      {/* Coming soon: exciting content about our shipping services! */}
+      <HomeHero />
+      <HomeBanner1 />
+      <div className="px-4 sm:px-6">
+        <GoogleMap />
+      </div>
+      <HomeBanner2 />
     </div>    
   );
 }
