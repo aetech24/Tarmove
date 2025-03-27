@@ -15,6 +15,7 @@ export default {
         pink : "#FFCBD4",
         gray: "#CCCCCC",
         white: "#F5F5F5",
+        getStartedpgcustomWhite: '#fff',
         gradientBg: "linear-gradient(90deg, #fdfdfd_10%, #fff4f6_100%)",
       },
     },

@@ -53,12 +53,13 @@ export function HomeBanner2() {
   <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold leading-normal text-black">
     Ready to{" "}
     <span className="text-redText inline-block lg:inline">Streamline</span>{" "}
-    Your <span className="text-redText inline-block lg:inline">Logistics</span>? Get Started Today!
+    Your <span className="text-redText inline-block lg:inline">Logistics</span>? 
+    <Link href={"/getStarted"} >Get Started Today!</Link>
   </h1>
 
   <div className="flex flex-col sm:flex-row gap-4 w-auto justify-center lg:justify-start">
     <Link
-      href="/contact"
+      href={"/getStarted"}
       className="btn bg-gradient-to-b from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 
       border-none rounded-full shadow-lg text-lg text-white font-semibold 
       hover:scale-105 transition-transform duration-200 px-8 py-3 
