@@ -22,23 +22,26 @@ export default function GetStartedPage() {
             <div className='mt-8 mb-8'>
                 <div className="flex justify-center">
                     <div className="grid grid-cols-2 justify-center gap-8 lg:gap-12 px-4 sm:px-6 py-12">
-                        <div>
+                        <div className="border border-solid rounded-md p-6 drop-shadow-md">
                             <div className='flex justify-center'> <Image src="/assets/Shipper_Icon.png" width={65} height={65} alt="ShipperIcon" /></div>
                             <div className='flex justify-center text-2xl text-black font-bold mt-3'>
                                Shipper 
                             </div>
-                            <div className='flex justify-center text-black'>"I need to ship goods."</div>
-                            <div>Book shipments, track cargo and manage logistics</div>
-                            <Link href={'/registerasShipper'}><div className='text-redText border-2 border-solid rounded-full'><div className='flex justify-center'>Register as Shipper</div></div></Link>
+                            <div className='flex justify-center text-black mt-3 font-bold'>"I need to ship goods."</div>
+                            <div className='flex justify-center text-black'>Book shipments, track cargo</div>
+                            <div className='flex justify-center text-black mb-10'>and manage logistics</div>
+                            <Link href={'/registerasShipper'}><div className='text-redText border-2 border-solid rounded-full'><div className='flex justify-center pt-2 pb-2'>Register as Shipper</div></div></Link>
                         </div>
-                        <div>
+                        <div className="border border-solid rounded-md p-6 drop-shadow-md">
                             <div className='flex justify-center'> <Image src="/assets/Transporter_Icon.png" width={65} height={65} alt="TransporterIcon" /></div>
                             <div className='flex justify-center text-2xl text-black font-bold mt-3'>
                                Transporter 
                             </div>
-                            <div className='flex justify-center text-black'>"I provide Transportation services."</div>
-                            <div>Find shipments, manage fleets and earn money</div>
-                            <Link href={'/registerasTransporter'}><div className='text-redText border-2 border-solid rounded-full'><div className='flex justify-center'>Register as Transporter</div></div></Link>
+                            <div className='flex justify-center text-black mt-3 font-bold'>"I provide Transportation</div>
+                            <div className='flex justify-center text-black font-bold'>services."</div>
+                            <div className='flex justify-center text-black'>Find shipments, manage fleets</div>
+                            <div className='flex justify-center mb-4 text-black'>and earn money</div>
+                            <Link href={'/registerasTransporter'}><div className='text-redText border-2 border-solid rounded-full pt-2 pb-2'><div className='flex justify-center'>Register as Transporter</div></div></Link>
                         </div>
                     </div>
                 </div>
