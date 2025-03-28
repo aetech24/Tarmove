@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ShipperIcon from '@/public/assets/Shipper_Icon.png'
-import TransporterIcon from '@/public/assets/Transporter_Icon.png'
+
 
 export default function GetStartedPage() {
   return (
@@ -30,7 +29,7 @@ export default function GetStartedPage() {
                             <div className='flex justify-center text-black mt-3 font-bold'>"I need to ship goods."</div>
                             <div className='flex justify-center text-black'>Book shipments, track cargo</div>
                             <div className='flex justify-center text-black mb-10'>and manage logistics</div>
-                            <Link href={'/registerasShipper'}><div className='text-redText border-2 border-solid rounded-full'><div className='flex justify-center pt-2 pb-2'>Register as Shipper</div></div></Link>
+                            <Link href={'/shipperSignup'}><div className='text-redText border-2 border-solid rounded-full'><div className='flex justify-center pt-2 pb-2'>Register as Shipper</div></div></Link>
                         </div>
                         <div className="border border-solid rounded-md p-6 drop-shadow-md">
                             <div className='flex justify-center'> <Image src="/assets/Transporter_Icon.png" width={65} height={65} alt="TransporterIcon" /></div>
@@ -41,7 +40,7 @@ export default function GetStartedPage() {
                             <div className='flex justify-center text-black font-bold'>services."</div>
                             <div className='flex justify-center text-black'>Find shipments, manage fleets</div>
                             <div className='flex justify-center mb-4 text-black'>and earn money</div>
-                            <Link href={'/registerasTransporter'}><div className='text-redText border-2 border-solid rounded-full pt-2 pb-2'><div className='flex justify-center'>Register as Transporter</div></div></Link>
+                            <Link href={'/transporterSignup'}><div className='text-redText border-2 border-solid rounded-full pt-2 pb-2'><div className='flex justify-center'>Register as Transporter</div></div></Link>
                         </div>
                     </div>
                 </div>
