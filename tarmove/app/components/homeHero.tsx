@@ -28,7 +28,7 @@ export default function HomeHero() {
               </p>
               <div className="flex gap-3">
                             <Link
-            href={"/"}
+            href={"/getStarted"}
             className="btn bg-gradient-to-b from-[#DD1234] to-[#B30F2A] border-none rounded-[100px] shadow-custom-2 text-md text-[#FFFFFF] text-center font-[600] hover:scale-105 duration-200"
           >
             Get Started
