@@ -1,118 +1,27 @@
-'use client'
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import TransporterLoginForm from '@/app/components/TransporterLoginForm';
 
-export default function ShipperLogin() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-
-  const [errors, setErrors] = useState({
-    email: '',
-    password: ''
-  });
-
-  const handleChange = (field, value) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
-    
-    // Clear error when user types
-    if (errors[field]) {
-      setErrors(prev => ({
-        ...prev,
-        [field]: ''
-      }));
-    }
-  };
-
-  const validateForm = () => {
-    let valid = true;
-    const newErrors = { email: '', password: '' };
-
-    if (!formData.email) {
-      newErrors.email = 'Email is required';
-      valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
-      valid = false;
-    }
-
-    if (!formData.password) {
-      newErrors.password = 'Password is required';
-      valid = false;
-    }
-
-    setErrors(newErrors);
-    return valid;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      // Handle login logic here
-      console.log('Login data:', formData);
-      // Add your authentication logic
-    }
-  };
-
+export default function TransporterLogin() {
   return (
-    <section className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-      <div className='flex justify-center'>
-        <div className="grid grid-cols-2 justify-center gap-8 lg:gap-12 px-4 sm:px-6 py-12">
-          <div><Image src="/assets/truck.png" width={350} height={350} alt="Shipperbg Img" /></div>
-          <div className=''>
-            <div className="rounded-md border-gray-300 shadow-sm p-8 bg-getStartedpgcustomWhite">
-              <div className='flex justify-center'><Image src="/assets/Transporter_Icon.png" width={65} height={65} alt="TransporterIcon" /></div>
-              <div className='flex justify-center text-3xl text-black font-bold'>Transporter Login</div>
-              <div className='flex justify-center text-black'>Access your transporter account to manage your</div>
-              <div className='flex justify-center text-black mb-6'>fleet</div>
-              <form onSubmit={handleSubmit}>
-                <div className='mb-5'>
-                  <label className="block text-sm font-semibold text-black">Email Address</label>
-                  <input
-                    type="email"
-                    placeholder='Enter your email address'
-                    value={formData.email}
-                    onChange={(e) => handleChange('email', e.target.value)}
-                    className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2 bg-getStartedpgcustomWhite focus:border-blue-500 focus:ring-blue-500 ${errors.email ? 'border-red-500' : 'border'}`}
-                  />
-                  {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
-                </div>
-
-                <div className='mb-5'>
-                  <label className="block text-sm font-semibold text-black">Password</label>
-                  <input
-                    type="password"
-                    placeholder='Enter your password'
-                    value={formData.password}
-                    onChange={(e) => handleChange('password', e.target.value)}
-                    className={`mt-1 block w-full rounded-md border-gray-300 bg-getStartedpgcustomWhite p-2 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${errors.password ? 'border-red-500' : 'border'}`}
-                  />
-                  {errors.password && <p className="mt-1 text-sm text-red-600">{errors.password}</p>}
-                </div>
-
-              <Link href={'/forgot-password'}>
-                <div className='flex justify-end mt-3 text-black mb-3'>Forgot password?</div>
-              </Link>
-
-                <div className="flex justify-end">
-                  <button
-                    type="submit"
-                    className="btn w-full bg-gradient-to-b from-[#DD1234] to-[#B30F2A] border-none rounded-[100px] shadow-custom-2 text-[17px] text-[#FFFFFF] font-[600] hover:scale-105 duration-200 hover:opacity-80"
-                  >
-                    Sign In
-                  </button>
-                </div>
-              </form>
-
-              <Link href={'/shipperSignup'}>
-                <div className='flex justify-center mt-3 text-black'>Don't have an account? <span className='text-redText ml-2'> Sign up</span></div>
-              </Link>
-            </div>
+    <section className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-6xl">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
+          {/* Image container - hidden on mobile, visible on md screens and up */}
+          <div className="hidden md:block w-full lg:w-1/2 max-w-md">
+            <Image 
+              src="/assets/truck.png" 
+              width={500} 
+              height={500} 
+              alt="Transporter background image"
+              className="w-full h-auto object-contain"
+              priority
+            />
+          </div>
+          
+          {/* Form container - full width on mobile, half width on desktop */}
+          <div className="w-full lg:w-1/2 max-w-md">
+            <TransporterLoginForm />
           </div>
         </div>
       </div>
