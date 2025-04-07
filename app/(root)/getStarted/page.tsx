@@ -9,7 +9,6 @@ export default function GetStartedPage() {
       description: "I need to ship goods.",
       details: "Book shipments, track cargo, and manage logistics.",
       link: "/shipperSignup",
-      image: "/assets/Shipper_Icon.png",
       alt: "Shipper Icon"
     },
     {
